@@ -1,0 +1,131 @@
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.grass {
+    background-color: #729f92;
+}
+.poison {
+    background-color: #b97fc9;
+}
+.fire {
+    background-color: #fd7d24;
+}
+.flying {
+    background-color: #3dc7ef;
+}
+.water {
+    background-color: #4592c4;
+}
+.bug {
+    background-color: #729f92;
+}
+.normal {
+    background-color: #a4acaf;
+}
+.electric {
+    background-color: #eed535;
+}
+.ground {
+    background-color: #ab9842;
+}
+.fairy {
+    background-color: #fdb9e9;
+}
+.fighting {
+    background-color: #d56723;
+}
+.psychic {
+    background-color: #f366b9;
+}
+.rock {
+    background-color: #a38c21;
+}
+.ghost {
+    background-color: #7b62a3;
+}
+.ice {
+    background-color: #51c4e7;
+}
+.dragon {
+    background-color: #f16e57;
+}
+
+@media screen and (min-width:380px){
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:576px) {
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:992px){
+ .pokemons {
+    grid-template-columns:1fr 1fr 1fr;  
+}
+}
+.pokemon  {
+    margin: .5rem;
+    padding: 2rem 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.pokemon .number {
+    color:#000;
+    text-align: right;
+    opacity: .3;
+    font-size: .625rem;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.pokemon .detail .types .type {
+    color: #FFF;
+    padding: .25rem .5rem;
+    margin: .25rem;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+.pokemon .name {
+    color: #fff;
+    margin-bottom: .25rem;
+    text-transform:capitalize;
+}
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+}
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+.pagination  button{
+    padding: .25rem .5rem;
+    background-color: purple;
+    border: none;
+    color: #fff;
+    border-radius: 1rem;
+}
